@@ -1,0 +1,14 @@
+
+#main{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.area-capa{
+    /* border: 1px solid red; */
+    padding: 20px;
+    background-color: var(--cl-gray);
+    padding: 50px 0;
+}

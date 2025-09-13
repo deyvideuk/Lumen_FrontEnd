@@ -1,22 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
 /* color: #244894  */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
-    --bg-gray: #d2d2d2;
-    --bg-nav: #58afb8;
+    --cl-gray: #f2f5fa;
+    --cl-tema: #264891;
     --color3: #269199;
     --color4: #ec225e;
-    --color5: #020305;
+    --cl-titulo: #101828;
+    --cl-descricao: #515D6F;
 }
+
 
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-#main{
-    /* border: 1px solid blue; */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(0.5rem, 1.3vw, 1.5rem);
 }
+
+
+
+.titulo{
+    /* border: 1px solid red; */
+    padding: 5px;
+    text-align: left;
+    color: var(--cl-titulo);
+    width: 100%;
+    max-width: 727px;
+}
+
+.titulo h1{
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(1rem, 5rem, 5rem);
+    font-style: normal;
+}
+
+.sub-titulo{
+    /* border: 1px solid red; */
+    padding: 5px;
+    text-align: left;
+    color: var(--cl-descricao);
+    
+}
+
+.sub-titulo p{
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(0.5rem, 1.3vw, 1.4rem);
+    font-weight: 600;
+}
+
