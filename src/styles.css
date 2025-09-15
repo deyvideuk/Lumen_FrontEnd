@@ -5,6 +5,7 @@
 
 :root{
     --cl-gray: #f2f5fa;
+    --cl-BKgray: rgb(236, 236, 236);
     --cl-tema: #264891;
     --color3: #269199;
     --color4: #ec225e;
@@ -25,8 +26,6 @@ p{
     font-size: clamp(0.5rem, 1.3vw, 1.5rem);
 }
 
-
-
 .titulo{
     /* border: 1px solid red; */
     padding: 5px;
@@ -39,6 +38,12 @@ p{
 .titulo h1{
     font-family: "Roboto", sans-serif;
     font-size: clamp(1rem, 5rem, 5rem);
+    font-style: normal;
+}
+
+.titulo h2{
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(1rem, 3rem, 3rem);
     font-style: normal;
 }
 

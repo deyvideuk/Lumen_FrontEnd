@@ -7,5 +7,9 @@ export const routes: Routes = [
     {
         path: "",
         component: Home,
+    },
+    {
+        path: "teste",
+        component: Header
     }
 ];

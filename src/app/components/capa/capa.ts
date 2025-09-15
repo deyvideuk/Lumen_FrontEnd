@@ -28,4 +28,6 @@ export class Capa {
   onSubmit(){
     alert('função back-end para solicitação de inscrição por EMAIL');
   }
+
+  
 }

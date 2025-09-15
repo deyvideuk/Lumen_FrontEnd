@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, input } from '@angular/core';
+import { Router } from '@angular/router';
 
 
-type BtnVariants = "primary" | "secundary";
+export type BtnVariants = "primary" | "secundary";
 
 @Component({
   selector: 'btn-primary',
@@ -18,10 +19,21 @@ export class BtnPrimary {
   @Input() disabled: boolean = false; 
   @Input() loading: boolean = false; 
   @Input() variant: BtnVariants = "primary";
+  @Input() route?: string;
 
   @Output("submit") onSubmit = new EventEmitter();
 
+  constructor(private router: Router) {}
+
+
   submit(){
-    this.onSubmit.emit()
+    if (this.route && this.route.trim() !== '') {
+      // Se a rota estiver definida, navega
+      this.router.navigate([this.route]);
+    } else {
+      // Caso contrário, apenas emite evento para o form
+      this.onSubmit.emit();
+    }
   }
+
 }
