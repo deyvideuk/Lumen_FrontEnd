@@ -24,7 +24,7 @@
 }
 
 .company{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -33,23 +33,30 @@
 }
 
 .area-form{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     padding: 5px;
     flex-direction: column;
 }
 
 #form-email{
-    border: 1px solid red;
-    padding: 5px;
+    border: 1px solid var(--cl-tema);
+    padding: 3px 10px;
     width: max-content;
-    border-radius: 3px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
 }
 
 #form-email :first-child{
     width: 350px;
     padding: 20px;
     font-size: 20px;
+    border: none;
+    outline: none;
 }
 
 #form-email :first-child::placeholder{

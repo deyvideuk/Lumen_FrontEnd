@@ -1,0 +1,29 @@
+
+.btn{
+    /* border: 1px solid red; */
+    border: none;
+    background-color: var(--cl-tema);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 20px 40px;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+.btn:disabled{
+    opacity: 0.6;
+    cursor: no-drop;
+    outline: none;
+    background-color: var(--cl-descricao);
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+.btn-primary{
+    color: var(--color3);
+    font: 25px;
+    font-weight: bold;
+    padding: 20px;
+}

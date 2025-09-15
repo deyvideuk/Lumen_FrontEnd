@@ -7,9 +7,19 @@
             <p>Fintech128 is an innovative fintech company leading the way in transforming the financial industry.</p>
         </div>
         <div class="area-form">
-            <form id="form-email" action="#" method="get" enctype="application/x-www-form-urlencoded">
-                <input type="email" placeholder="Enter your email address">
-                <input type="submit" value="">
+            <form [formGroup]="newsletterForm" id="form-email">
+                <input 
+                    formControlName="email"
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address">
+
+                <btn-primary 
+                    btn-text="->" 
+                    variant="primary" 
+                    (submit)="onSubmit()"
+                ></btn-primary>
             </form>
             <div class="sub-titulo">
                 <p>We care about your data in our <a href="#">privacy policy</a></p>
@@ -17,6 +27,6 @@
         </div>
     </div>
     <div class="area-capa">
-        <img [src]="'assets/imagens/artes_IA/cards.png'" alt="">
+        <img ngSrc="assets/imagens/artes_IA/cards.png" alt="Cards images" width="500" height="500">
     </div>
 </div>
