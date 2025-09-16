@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter, input } from '@angular/core';
 import { Router } from '@angular/router';
 
 
-export type BtnVariants = "primary" | "secundary";
+export type BtnVariants = "primary" | "secundary" | "submit";
 
 @Component({
   selector: 'btn-primary',
@@ -35,5 +35,6 @@ export class BtnPrimary {
       this.onSubmit.emit();
     }
   }
+  
 
 }

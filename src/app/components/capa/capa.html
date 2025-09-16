@@ -7,7 +7,7 @@
             <p>Fintech128 is an innovative fintech company leading the way in transforming the financial industry.</p>
         </div>
         <div class="area-form" data-aos="slide-right">
-            <form [formGroup]="newsletterForm" id="form-email">
+            <form [formGroup]="newsletterForm" id="form-email" (ngSubmit)="onSubmit">
                 <input 
                     formControlName="email"
                     type="email" 
@@ -19,6 +19,8 @@
                     btn-text="->" 
                     variant="primary" 
                     (submit)="onSubmit()"
+                    type="submit"
+                    [disabled]="newsletterForm.invalid"
                 ></btn-primary>
             </form>
             <div class="sub-titulo">

@@ -1,1 +1,6 @@
 Site referência: https://fintech-128.webflow.io/
+
+Pensei no primeiro momento 3 telas:
+- inicial com login
+- cadastro
+- recuperação de acesso (pode ser um fundo branco)

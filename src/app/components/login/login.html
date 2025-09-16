@@ -1,0 +1,104 @@
+<section id="area-login">
+    <div class="container-login">
+        <div class="login">
+            <div class="login-login">
+                <div class="area-form-login">
+                    <form>
+                        <input type="text" name="" id="">
+                    </form>
+                </div>
+                <div class="titulo">
+                    <h2>Welcome Back!</h2>
+                    <div class="texto">
+                        <p>
+                        To Keep Connected with us, please login with your personal info.
+                        </p>
+                    </div>
+
+                    <div class="area-btn">
+                        <btn-primary btn-text="Sign in" variant="secundary" (submit)="slide()"></btn-primary>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="register-login">
+                <div class="titulo">
+                    <h2>Create Account</h2>
+                    <div class="texto">
+                        <p>
+                        Don't have an account? it takes less than a minute. If you already
+                        have an account Login.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="area-form-register">
+                    <form [formGroup]="subscribeForm" (ngSubmit)="onSubmitRegister()">
+                        <!-- Campo de Email -->
+                        <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Username"
+                        formControlName="username"
+                        >
+
+                        <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email address"
+                        formControlName="email"
+                        />
+
+                        <input 
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            formControlName="password"
+                        >
+
+                        <input 
+                            type="password"
+                            id="rePassword"
+                            name="rePassword"
+                            placeholder="Re-enter password"
+                            formControlName="rePassword"
+                        >
+
+                        
+
+                        <!-- Mensagens de Erro -->
+                        <div *ngIf="subscribeForm.get('email')?.invalid && subscribeForm.get('email')?.touched" class="erro">
+                            <small *ngIf="subscribeForm.get('email')?.errors?.['required']">
+                                O email é obrigatório.
+                            </small>
+                            <small *ngIf="subscribeForm.get('email')?.errors?.['email']">
+                                Insira um email válido.
+                            </small>
+                            
+                            <small 
+                                *ngIf="
+                                    subscribeForm.get('rePassword')?.touched &&
+                                    subscribeForm.errors?.['passwordsMismatch']
+                                " 
+                                class="erro">
+                                <small>As senhas não coincidem.</small>
+                        </small>
+                            
+                        </div>
+
+                        <!-- Botão de Enviar -->
+                        <btn-primary
+                        btn-text="Create Account"
+                        type="submit"
+                        [disabled]="subscribeForm.invalid"
+                        ></btn-primary>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

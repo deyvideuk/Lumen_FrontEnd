@@ -1,13 +1,13 @@
 
 .btn{
     /* border: 1px solid red; */
-    border: none;
+    border: 2px solid var(--cl-tema);
     background-color: var(--cl-tema);
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 20px 40px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 20px;
     transition: 60ms;
 }
@@ -18,8 +18,10 @@
     outline: none;
     background-color: var(--cl-descricao);
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
 }
 
 .btn-primary{
@@ -38,4 +40,5 @@
     color: var(--cl-tema);
     border: 2px solid var(--cl-tema);
     transition: 60ms;
+    outline: none;
 }
