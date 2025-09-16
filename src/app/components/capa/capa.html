@@ -1,12 +1,12 @@
 <div class="area-company">
     <div class="company">
-        <div class="titulo">
+        <div class="titulo" data-aos="slide-right" data-aos-delay="400">
             <h1>Solutions for <br> Business Finance</h1>
         </div>
-        <div class="sub-titulo">
+        <div class="sub-titulo" data-aos="slide-right" data-aos-delay="150">
             <p>Fintech128 is an innovative fintech company leading the way in transforming the financial industry.</p>
         </div>
-        <div class="area-form">
+        <div class="area-form" data-aos="slide-right">
             <form [formGroup]="newsletterForm" id="form-email">
                 <input 
                     formControlName="email"
@@ -26,7 +26,33 @@
             </div>
         </div>
     </div>
-    <div class="area-capa">
-        <img ngSrc="assets/imagens/artes_IA/cards.png" alt="Cards images" width="500" height="500">
+    <div class="area-capa" data-aos="fade-in" data-aos-delay="500">
+        <img ngSrc="assets/imagens/artes_IA/cards.png" alt="Cards images" width="500" height="500" priority="true">
+    </div>
+</div>
+
+<div class="area-gestao" >
+    <div class="texto max-width" data-aos="fade-in" data-aos-delay="200">
+        <p>Wealth management for people from leading tech companies.</p>
+    </div> 
+    <div class="gestao" data-aos="flip-left">
+        <div class="box">
+            <img ngSrc="/assets/icones/company_logo_xmedium.svg" alt="company_logo_xmedium" width="150" height="50">
+        </div>
+        <div class="box">
+            <img ngSrc="/assets/icones/company_logo_sphurele.svg" alt="company_logo_sphurele" width="150" height="50">
+        </div>
+        <div class="box">
+            <img ngSrc="/assets/icones/company_logo_nietzsche.svg" alt="company_logo_nietzsche" width="150" height="50">
+        </div>
+        <div class="box">
+            <img ngSrc="/assets/icones/company_logo_lighbox.svg" alt="company_logo_lighbox" width="150" height="50">
+        </div>
+        <div class="box">
+            <img ngSrc="/assets/icones/company_logo_featherDev.svg" alt="company_logo_featherDev" width="150" height="50">
+        </div>
+        <div class="box">
+            <img ngSrc="/assets/icones/company_globalBank.svg" alt="company_globalBank" width="150" height="50">
+        </div>
     </div>
 </div>

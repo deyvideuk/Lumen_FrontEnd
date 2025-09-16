@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* @import "aos/dist/aos.css"; */
+
+
 :root{
     --cl-gray: #f2f5fa;
     --cl-BKgray: rgb(236, 236, 236);
@@ -10,7 +13,7 @@
     --color3: #269199;
     --color4: #ec225e;
     --cl-titulo: #101828;
-    --cl-descricao: #515D6F;
+    --cl-descricao: #414a58;
 }
 
 
@@ -35,6 +38,13 @@ p{
     max-width: 727px;
 }
 
+.titulo p{
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--cl-titulo);
+}
+
 .titulo h1{
     font-family: "Roboto", sans-serif;
     font-size: clamp(1rem, 5rem, 5rem);
@@ -43,7 +53,7 @@ p{
 
 .titulo h2{
     font-family: "Roboto", sans-serif;
-    font-size: clamp(1rem, 3rem, 3rem);
+    font-size: clamp(1rem, 2.5rem, 2rem);
     font-style: normal;
 }
 
@@ -58,6 +68,29 @@ p{
 .sub-titulo p{
     font-family: "Roboto", sans-serif;
     font-size: clamp(0.5rem, 1.3vw, 1.4rem);
-    font-weight: 600;
+    font-weight: 300;
 }
+
+.texto{
+    /* border: 1px solid red; */
+    font-family: "Roboto", sans-serif;
+    font-size: 250px !important;
+    font-weight: 500;
+    width: 100%;
+    
+}
+
+.texto p{
+    /* border: 1px solid red; */
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--cl-descricao);
+}
+
+.max-width{
+    max-width: 300px;
+}
+
+
 

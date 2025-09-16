@@ -9,6 +9,7 @@
     color: white;
     font-size: 30px;
     padding: 10px 20px;
+    transition: 60ms;
 }
 
 .btn:disabled{
@@ -28,11 +29,13 @@
     padding: 20px;
 }
 
-.btn-primary:hover{
-    border: 1px solid var(--cl-tema);
-    background-color: transparent !important;
+.primary:hover{
+    opacity: 0.9;
 }
 
-.btn-secundary{
-    background-color: red;
+.secundary:hover{
+    background-color: transparent;
+    color: var(--cl-tema);
+    border: 2px solid var(--cl-tema);
+    transition: 60ms;
 }
