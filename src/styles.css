@@ -1,11 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-/* color: #244894  */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* @import "aos/dist/aos.css"; */
-
-
 :root{
     --cl-gray: #f2f5fa;
     --cl-BKgray: rgb(236, 236, 236);
@@ -14,8 +6,14 @@
     --color4: #ec225e;
     --cl-titulo: #101828;
     --cl-descricao: #414a58;
-}
 
+    /* Tamanhos base de fontes */
+    --fs-small: clamp(0.8rem, 1vw, 1rem);   /* textos pequenos */
+    --fs-base: clamp(1rem, 1.2vw, 1.125rem); /* corpo do texto */
+    --fs-medium: clamp(1.25rem, 2vw, 1.5rem); /* subtítulos */
+    --fs-large: clamp(1.75rem, 3vw, 2.5rem); /* títulos médios */
+    --fs-xlarge: clamp(2rem, 5vw, 4rem);     /* títulos principais */
+}
 
 *{
     margin: 0;
@@ -24,13 +22,21 @@
     font-family: "Roboto", sans-serif;
 }
 
+body,html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 p{
-    font-family: "Roboto", sans-serif;
-    font-size: clamp(0.5rem, 1.3vw, 1.5rem);
+    font-size: var(--fs-base);
+    line-height: 1.5;
+}
+
+.hide{
+    display: none;
 }
 
 .titulo{
-    /* border: 1px solid red; */
     padding: 5px;
     text-align: left;
     color: var(--cl-titulo);
@@ -39,53 +45,42 @@ p{
 }
 
 .titulo p{
-    font-family: "Roboto", sans-serif;
-    font-size: 23px;
+    font-size: var(--fs-medium);
     font-weight: 500;
     color: var(--cl-titulo);
 }
 
 .titulo h1{
-    font-family: "Roboto", sans-serif;
-    font-size: clamp(1rem, 5rem, 5rem);
-    font-style: normal;
+    font-size: var(--fs-xlarge);
+    font-weight: 700;
     color: var(--cl-titulo);
 }
 
 .titulo h2{
-    font-family: "Roboto", sans-serif;
-    font-size: clamp(1rem, 2.5rem, 2rem);
-    font-style: normal;
+    font-size: var(--fs-large);
+    font-weight: 600;
     color: var(--cl-titulo);
 }
 
 .sub-titulo{
-    /* border: 1px solid red; */
     padding: 5px;
     text-align: left;
     color: var(--cl-descricao);
-    
 }
 
 .sub-titulo p{
-    font-family: "Roboto", sans-serif;
-    font-size: clamp(0.5rem, 1.3vw, 1.4rem);
     font-weight: 300;
-
+    font-size: var(--fs-large);
 }
 
 .texto{
-    /* border: 1px solid red; */
-    font-family: "Roboto", sans-serif;
-    font-size: 250px !important;
+    font-size: var(--fs-large); /* removi o 250px */
     font-weight: 500;
     width: 100%;
 }
 
 .texto p{
-    /* border: 1px solid red; */
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: var(--fs-medium);
     font-weight: 400;
     color: var(--cl-descricao);
 }
@@ -93,6 +88,3 @@ p{
 .max-width{
     max-width: 300px;
 }
-
-
-

@@ -7,7 +7,7 @@
             <p>Fintech128 is an innovative fintech company leading the way in transforming the financial industry.</p>
         </div>
         <div class="area-form" data-aos="slide-right">
-            <form [formGroup]="newsletterForm" id="form-email" (ngSubmit)="onSubmit">
+            <form [formGroup]="newsletterForm" id="form-email" (ngSubmit)="onSubmit()">
                 <input 
                     formControlName="email"
                     type="email" 
@@ -16,14 +16,14 @@
                     placeholder="Enter your email address">
 
                 <btn-primary 
-                    btn-text="->" 
+                    btn-text=">" 
                     variant="primary" 
                     (submit)="onSubmit()"
                     type="submit"
                     [disabled]="newsletterForm.invalid"
                 ></btn-primary>
             </form>
-            <div class="sub-titulo">
+            <div class="texto">
                 <p>We care about your data in our <a href="#">privacy policy</a></p>
             </div>
         </div>
@@ -34,27 +34,29 @@
 </div>
 
 <div class="area-gestao" >
-    <div class="texto max-width" data-aos="fade-in" data-aos-delay="200">
-        <p>Wealth management for people from leading tech companies.</p>
-    </div> 
-    <div class="gestao" data-aos="flip-left">
-        <div class="box">
-            <img ngSrc="/assets/icones/company_logo_xmedium.svg" alt="company_logo_xmedium" width="150" height="50">
-        </div>
-        <div class="box">
-            <img ngSrc="/assets/icones/company_logo_sphurele.svg" alt="company_logo_sphurele" width="150" height="50">
-        </div>
-        <div class="box">
-            <img ngSrc="/assets/icones/company_logo_nietzsche.svg" alt="company_logo_nietzsche" width="150" height="50">
-        </div>
-        <div class="box">
-            <img ngSrc="/assets/icones/company_logo_lighbox.svg" alt="company_logo_lighbox" width="150" height="50">
-        </div>
-        <div class="box">
-            <img ngSrc="/assets/icones/company_logo_featherDev.svg" alt="company_logo_featherDev" width="150" height="50">
-        </div>
-        <div class="box">
-            <img ngSrc="/assets/icones/company_globalBank.svg" alt="company_globalBank" width="150" height="50">
+    <div class="gestao">
+        <div class="texto max-width" data-aos="fade-in" data-aos-delay="200">
+            <p>Wealth management for people from leading tech companies.</p>
+        </div> 
+        <div class="gestao-empresas" data-aos="flip-left">
+            <div class="box" data-aos="fade-left" data-aos-delay="100">
+                <img ngSrc="/assets/icones/company_logo_xmedium.svg" alt="company_logo_xmedium" width="150" height="50">
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-delay="200">
+                <img ngSrc="/assets/icones/company_logo_sphurele.svg" alt="company_logo_sphurele" width="150" height="50">
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-delay="300">
+                <img ngSrc="/assets/icones/company_logo_nietzsche.svg" alt="company_logo_nietzsche" width="150" height="50">
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-delay="400">
+                <img ngSrc="/assets/icones/company_logo_lighbox.svg" alt="company_logo_lighbox" width="150" height="50">
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-delay="500">
+                <img ngSrc="/assets/icones/company_logo_featherDev.svg" alt="company_logo_featherDev" width="150" height="50">
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-delay="600">
+                <img ngSrc="/assets/icones/company_globalBank.svg" alt="company_globalBank" width="150" height="50" data-aos="fade-left" data-aos-delay="">
+            </div>
         </div>
     </div>
 </div>

@@ -2,7 +2,6 @@ import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
-import { Login } from './components/login/login';
 import AOS from 'aos';
 
 
@@ -13,7 +12,6 @@ import AOS from 'aos';
   imports: [
     Header,
     Footer,
-    Login,
     RouterOutlet
   ],
   templateUrl: './app.html',
