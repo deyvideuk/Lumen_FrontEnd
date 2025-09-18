@@ -92,8 +92,8 @@
     border: 1px solid var(--bg-gray);
     background-color: white;
     display: flex;
-    width: 600px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 500px;
     border-top-left-radius: 100px;
     border-top-right-radius: 600px;
     border-bottom-left-radius: 300px;
@@ -106,6 +106,7 @@
     width: 100%;
     animation: animeCapa 3s ease-in-out infinite alternate;
     filter: drop-shadow(1px 1px 2px black);
+    object-fit: contain;
 }
 
 .area-gestao{
@@ -160,6 +161,7 @@
     }
 
     .area-capa{
+
         position: absolute;
         left: 50px;
         top: 100px;
