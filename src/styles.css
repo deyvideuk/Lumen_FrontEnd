@@ -1,7 +1,8 @@
 :root{
     --cl-gray: #f2f5fa;
     --cl-BKgray: rgb(236, 236, 236);
-    --cl-tema: #264891;
+    /* --cl-tema: #264891; */
+    --cl-tema: #3B5A9C;
     --color3: #269199;
     --color4: #ec225e;
     --cl-titulo: #101828;

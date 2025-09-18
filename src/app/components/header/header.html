@@ -1,33 +1,37 @@
-<div class="btnMenu" (click)="openMenu('open')">
-    <img src="assets/icones/menu.png" alt="imagem botão menu" >
+<div class="btnMenu" (click)="openMenu()">
+    <img src="/assets/icones/menu.png" alt="imagem botão menu" >
 </div>
 
 <header id="header" data-aos="slide-down">
+
+    <div class="btnClose" (click)="closeMenu()">
+        <img src="/assets/icones/fechar.png" alt="close menu img">
+    </div>
+
     <div class="area-header">
         <div class="logo">
-            <a routerLink="">
+            <a routerLink="" (click)="closeMenu()">
                 <img ngSrc="/assets/imagens/logo/Lumen_Logo.png" priority="true" alt="e" width="100" height="100">
             </a>
         </div>
         <nav id="navegation">
             <ul>
                 <li>
-                    <a routerLink="">Home</a>
-                    <!-- <img [src]="'assets/icones/chevron-down.svg'" alt="" class="chevron-down"> -->
+                    <a routerLink="" (click)="closeMenu()">Home</a>
                 </li>
                 <li>
-                    <a routerLink="#">About Us</a>
+                    <a routerLink="#" (click)="closeMenu()">About Us</a>
                     <img [src]="'assets/icones/chevron-down.svg'" alt="" class="chevron-down">
                 </li>
                 <li>
-                    <a routerLink="#">Portifolio</a>
+                    <a routerLink="#" (click)="closeMenu()">Portifolio</a>
                     <img [src]="'assets/icones/chevron-down.svg'" alt="" class="chevron-down">
                 </li>
                 <li>
-                    <a routerLink="#">Contato/Suporte</a>
+                    <a routerLink="#" (click)="closeMenu()">Contato/Suporte</a>
                 </li>
                 <li class="login">
-                    <a routerLink="login">Login</a>
+                    <a routerLink="login" (click)="closeMenu()">Login</a>
                 </li>
             </ul>
         </nav>

@@ -32,11 +32,34 @@
     top: 10px;
     left: 10px;
     z-index: 3;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px var(--cl-descricao));
 }
 
 .btnMenu img{
     width: 100%;
-    object-fit: cover !important;
+    object-fit: contain !important;
+}
+
+.btnClose{
+    /* border: 1px solid red; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+    height: max-content;
+    position: fixed;
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.btnClose img{
+    width: 100%;
+    object-fit: contain !important;
 }
 
 .logo{
@@ -119,6 +142,10 @@
 
 @media screen and (max-width: 920px) {
     .btnMenu{
+        display: flex;
+    }
+
+    .btnClose{
         display: flex;
     }
 

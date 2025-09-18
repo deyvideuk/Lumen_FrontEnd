@@ -2,7 +2,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BtnPrimary } from '../btn-primary/btn-primary';
-import { HtmlParser } from '@angular/compiler';
+
 
 @Component({
   selector: 'app-header',
@@ -17,20 +17,31 @@ import { HtmlParser } from '@angular/compiler';
 })
 
 export class Header {
-  isOpen = false;
   
-  openMenu(open: string){
+  
+  openMenu(){
     const header = document.querySelector("#header") as HTMLElement | null;
-    
-    let isOpen = false;
-    
-    if(header){
-      if(open == 'open'){
+    const btnMenu = document.querySelector(".btnMenu") as HTMLElement | null;
+
+    if(header && btnMenu){
         header.style.left = "0px";
-        header.style.transition = "all 1s"
-        isOpen = true;
-      }else{
-        header.style.left = "950px";
+        header.style.transition = "all 1s";
+        btnMenu.style.left = "-100px";
+        btnMenu.style.transition = "all 1s";
+      }
+  }
+
+  closeMenu(){
+    const header = document.querySelector("#header") as HTMLElement | null;
+    const btnMenu = document.querySelector(".btnMenu") as HTMLElement | null;
+    const width = window.innerWidth;
+
+    if(header && btnMenu){
+      if(width <= 920){
+        header.style.left = "-950px";
+        header.style.transition = "all 1s";
+        btnMenu.style.left = "10px";
+        btnMenu.style.transition = "all 1s";
       }
     }
   }
